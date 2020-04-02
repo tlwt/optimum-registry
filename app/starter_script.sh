@@ -16,8 +16,8 @@ step ca health
 echo "Generating server key and certificate ..."
 step ca certificate 127.0.0.1 "srv.crt" "srv.key" --provisioner-password-file="/secret/password.txt"
 
-echo "Use following fingerprint to bootstrap ca root certificate:" >> /secret/fingerprint.txt
-step certificate fingerprint $(step path)/certs/root_ca.crt >> /secret/fingerprint.txt
+echo "Use following fingerprint to bootstrap ca root certificate:"
+step certificate fingerprint $(step path)/certs/root_ca.crt
 
 
 # Start server application
