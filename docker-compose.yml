@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    ca:
+      build: .
+      volumes:
+        - ./app:/app
+        - ./secret:/secret
+      ports:
+      - 8443:8443
+      - 9443:8443
