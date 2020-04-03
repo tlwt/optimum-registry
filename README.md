@@ -11,3 +11,7 @@ https://smallstep.com/
 the following ports need to be opened:
 * 8443
 * 9443
+
+### Testing:
+
+https://nxp.cloud.consider-ip.com:9443/hi

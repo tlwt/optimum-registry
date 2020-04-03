@@ -5,7 +5,7 @@ step ca init --name=TestCA --dns=127.0.0.1 --address=:8443 --provisioner=example
 
 # Start the step ca
 echo "Starting step-ca..."
-step-ca $(step path)/config/ca.json -password-file "/secret/password.txt" &
+step-ca $(step path)/config/ca.json -password-file "/secret/password.txt" –http-listen=80 –standalone &
 sleep 2
 
 echo "step ca initialized and up?"
